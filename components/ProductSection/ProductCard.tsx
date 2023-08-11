@@ -4,6 +4,7 @@ import React from "react";
 import { AddToCartBtn, LikeBtn, PriceTag } from "..";
 import { FaTrash } from "react-icons/fa";
 import { useShoppingCart } from "@/context/ShoppingCartContext";
+
 const ProductCard = (props: ProductDetails) => {
   const {  getItemQuantity,
     increaseQuantity,
@@ -11,7 +12,8 @@ const ProductCard = (props: ProductDetails) => {
     remvoveItem} = useShoppingCart();
   const quantity = getItemQuantity(props.id);
   return (
-    
+
+
     <div className="relative mb-6 ">
       <div className="card bg-[#E2E2E2] w-72 h-96 py-4 px-2 relative ">
         <div className="h-40 relative">

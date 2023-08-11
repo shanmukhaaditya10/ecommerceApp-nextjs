@@ -5,8 +5,8 @@ import { ProductCard } from '..'
 
 
 import { useData } from '@/context/DataProvider'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
-
+import Skeleton,{SkeletonTheme} from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const ProductSection = () => {
   const {fetchData,allItems} = useData()
@@ -23,7 +23,7 @@ fetchData()
   return (
     <div className=' flex gap-5 flex-wrap px-4
     py-9 justify-center flex-1'> 
-    {allItems.length > 0 ? (
+    {allItems.length < 0 ? (
       allItems.map((item) => (
         <ProductCard
           id={item.id}
@@ -39,8 +39,6 @@ fetchData()
     ) :   
     <SkeletonTheme baseColor="#E2E2E2" highlightColor="#828181">
     <div className='flex flex-wrap justify-center gap-5
-
-    
     '>
     {[...Array(8)].map((_, index) => (
       <Skeleton
