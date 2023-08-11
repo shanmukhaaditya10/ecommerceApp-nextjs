@@ -23,6 +23,7 @@ const Page = () => {
       <h1 className="text-4xl font-bold text-gray-600 py-4">Shopping Bag</h1>
       <div className="flex outline-3 flex-col sm:flex-row ">
       <div className="md:w-[60%] w-full">
+        
         {filteredCartItems.map((item) => (
           <div className="h-60  bg-gray-100 my-2 flex  items-center mx-4 ">
             <div className="relative w-36 h-36 ml-4">

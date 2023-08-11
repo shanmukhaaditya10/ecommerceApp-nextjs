@@ -15,7 +15,7 @@ const ProductCard = (props: ProductDetails) => {
 
 
     <div className="relative mb-6 ">
-      <div className="card bg-[#E2E2E2] w-72 h-96 py-4 px-2 relative ">
+      <div className="card bg-[#c4c4c4] w-72 h-96 py-4 px-2 relative ">
         <div className="h-40 relative">
           <Image
             src={props.images[0] }

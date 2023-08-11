@@ -37,7 +37,7 @@ fetchData()
         />
       ))
     ) :   
-    <SkeletonTheme baseColor="#E2E2E2" highlightColor="#828181">
+    <SkeletonTheme baseColor="#c4c4c4" highlightColor="#828181">
     <div className='flex flex-wrap justify-center gap-5
     '>
     {[...Array(8)].map((_, index) => (
