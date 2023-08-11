@@ -24,7 +24,7 @@ const DataProvider = ({ children }: {children: React.ReactNode}) => {
     const data = await res.json()
    
       console.log(data);
-      await wait(5000)
+      await wait(1000)
       setAllItems(data.products);
       return data
    

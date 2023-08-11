@@ -23,7 +23,7 @@ fetchData()
   return (
     <div className=' flex gap-5 flex-wrap px-4
     py-9 justify-center flex-1'> 
-    {allItems.length < 0 ? (
+    {allItems.length > 0 ? (
       allItems.map((item) => (
         <ProductCard
           id={item.id}
